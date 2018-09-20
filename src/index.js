@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import store from './store';
 
 import 'normalize.css';
-import './style/index.css';
+import './style/index.scss';
 import Navbar from './components/Navbar';
 
 import Home from './components/Home';
