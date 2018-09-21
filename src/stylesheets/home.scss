@@ -1,0 +1,52 @@
+@import 'modules/colors';
+
+@mixin header-padding($horizontal, $vertical) {
+  padding-left: $horizontal;
+  padding-right: $horizontal;
+  padding-top: $vertical;
+  padding-bottom: $vertical;
+}
+
+header {
+  font-family: Helvetica;
+  color: white;
+  width: 100%;
+  background-color: $dark-purple;
+  @include header-padding(60px, 40px);
+  h1 {
+    font-size: 44;
+    font-weight: 400;
+    letter-spacing: -1;
+    line-height: 45px;
+    margin: 0;
+  }
+  button {
+    font-size: 17;
+    background-color: $light-pink;
+    height: 60px;
+    width: 211px;
+    border: 0;
+    border-radius: 30px;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    h4 {
+      margin: 0 0 5px 0;
+      color: #919191;
+      font-weight: 100;
+    }
+    span {
+      font-size: 16;
+      font-weight: 200;
+    }
+    .current {
+      margin-right: 60px;
+    }
+    .previous {
+
+    }
+  }
+}

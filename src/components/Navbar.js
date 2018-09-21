@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../style/navbar.scss';
+import '../stylesheets/navbar.scss';
 
 const links = ['Work', 'About', 'Contact'];
 

@@ -2,22 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 
 import 'normalize.css';
-import './style/index.scss';
+import './stylesheets/index.scss';
 import Navbar from './components/Navbar';
-
 import Home from './components/Home';
-import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Switch>
+      <div>
         <Navbar />
-        <Route path="/" component={Home} />
-      </Switch>
+        <Switch>
+          <Route path="/" component={Home} />
+        </Switch>
+      </div>
     </BrowserRouter>
   </Provider>
   , document.getElementById('root'));
