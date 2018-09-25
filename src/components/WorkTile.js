@@ -15,7 +15,7 @@ const WorkTile = props => {
         <div className="leftContainer">
           <h3>{props.data.header}</h3>
           <p>{props.data.description}</p>
-          <Link to={"/"}>View Project</Link>
+          <Link className="link" to={"/"}>View Project</Link>
         </div>
         <button>
           {cardButtonText.toUpperCase()}

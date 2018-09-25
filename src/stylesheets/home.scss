@@ -21,7 +21,7 @@ header {
   h1 {
     font-size: 44px;
     font-weight: 400;
-    letter-spacing: -1;
+    letter-spacing: -1px;
     line-height: 45px;
     margin: 0;
   }
@@ -63,4 +63,13 @@ main {
   background-color: $white;
   padding-left: 80px;
   padding-right: 80px;
+  h2 {
+    font-family: Helvetica;
+    font-size: 36px;
+    color: $dark-blue;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }

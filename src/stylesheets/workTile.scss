@@ -8,14 +8,13 @@
 }
 
 .workContainer {
-  height: 400px;
+  height: 600px;
   width: 100%;
   position: relative;
   background-color: $white;
-  font-family: Helvetica;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   .workImage {
-    height: 350px;
+    height: 550px;
     width: 100%;
     background-color: $gray;
   }
@@ -23,20 +22,41 @@
     position: absolute;
     bottom: 0px;
     right: 100px;
-    width: 500px;
-    // height: 142px;
+    width: 600px;
+    height: 90px;
     background-color: $white;
-    border: 1px solid black;
+    // border: 1px solid black;
     @include card-padding(30px, 20px);
     display: flex;
+    box-shadow: 0 0 20px $light-gray;
     .leftContainer {
       display: flex;
       flex-direction: column;
-      // justify-content: space-between;
+      justify-content: space-between;
       // align-items: center;
       width: 100%;
+      margin-right: 40px;
       h3 {
+        font-family: Helvetica;
+        font-size: 20px;
+        color: $dark-blue;
+        font-weight: 400;
         margin: 0;
+      }
+      p {
+        font-size: 14px;
+        font-family: Helvetica;
+        line-height: 22px;
+        color: $light-gray;
+        margin: 0;
+        // margin-top: 9px;
+        // margin-bottom: 9px;
+      }
+      .link {
+        font-size: 14px;
+        font-family: Helvetica;
+        color: $pink;
+        text-decoration: none;
       }
     }
     button {
@@ -44,7 +64,11 @@
       // justify-content: center;
       // align-items: center;
       // text-align: center;
+      font-family: Helvetica;
+      color: $dark-blue;
       font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 1.2px;
       background-color: $light-pink;
       height: 20px;
       width: 82px;
