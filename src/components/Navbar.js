@@ -8,7 +8,7 @@ const Navbar = () => {
   const renderLinks = () => {
     return links.map(link => {
       return (
-        <Link className="link" to={`/${link.toLowerCase()}`}>
+        <Link key={link} className="link" to={`/${link.toLowerCase()}`}>
           {link}
         </Link>
       )

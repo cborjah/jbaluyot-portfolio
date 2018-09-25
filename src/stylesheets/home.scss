@@ -7,21 +7,26 @@
   padding-bottom: $vertical;
 }
 
-header {
+.container {
+  // display: flex;
+  // flex-direction: column;
   font-family: Helvetica;
+}
+
+header {
   color: white;
   width: 100%;
   background-color: $dark-purple;
-  @include header-padding(60px, 40px);
+  @include header-padding(100px, 70px);
   h1 {
-    font-size: 44;
+    font-size: 44px;
     font-weight: 400;
     letter-spacing: -1;
     line-height: 45px;
     margin: 0;
   }
   button {
-    font-size: 17;
+    font-size: 17px;
     background-color: $light-pink;
     height: 60px;
     width: 211px;
@@ -39,7 +44,7 @@ header {
       font-weight: 100;
     }
     span {
-      font-size: 16;
+      font-size: 16px;
       font-weight: 200;
     }
     .current {
@@ -49,4 +54,13 @@ header {
 
     }
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  padding-left: 80px;
+  padding-right: 80px;
 }
